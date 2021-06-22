@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 11</title>
+</head>
+<body>
+    <h1>Nacionalidade</h1>
+    Digite seu país: <input type= "text" name="nacionalidade" id="txtnac">
+    <input type="button" value="Enviar" onclick="verifica()">
+    <div id="result">Resultado</div>
+    
+    <script>
+        function verifica(){
+            var nac = window.document.getElementById('txtnac')
+            var nac = String(txtnac.value)
+            var result = window.document.getElementById('result')
+            result.innerHTML = `<p>Você mora no ${nac}</p>`
+            if (nac == 'BRASIL'){
+                result.innerHTML += '<p>E você é Brasileiro</p>'
+            } else{
+                result.innerHTML += '<p>E você é estrangeiro</p>'
+            }
+        }
+    </script>
+    
+</body>
+</html>
