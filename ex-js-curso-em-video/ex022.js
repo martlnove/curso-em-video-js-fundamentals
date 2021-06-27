@@ -29,3 +29,14 @@ function fatorial(n) {
 }
 
 console.log(fatorial(5))
+
+
+function fatorial_rec(n){
+    if (n == 1){
+        return 1
+    } else{
+        return n * fatorial(n - 1)
+    }
+}
+
+console.log(fatorial_rec(5))
